@@ -8,11 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-  .hover-black:hover {
-    color: #ffc107 !important;
-  }
-  </style>  
+
     <body>
       <nav class="navbar navbar-expand-sm navbar-emphasis bg-warning-subtle py-3 sticky-top">
         <div class="container-fluid justify-content-center fw-bold">
@@ -26,38 +22,36 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item bs-warning-text-emphasis">
-                <a class="nav-link active hover-black"  aria-current="page" href="#">Home</a>
+                <a class="nav-link active"  aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item bs-warning-text-emphasis">
-                <a class="nav-link active hover-black"  aria-current="page" href="#What Food">What Food?</a>
+                <a class="nav-link active"  aria-current="page" href="#What Food">What Food?</a>
               </li>
               <li class="nav-item dropdown">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active hover-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Restaurants
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item hover-black" href="TheCrunch.html">The Crunch</a></li>
-                    <li><a class="dropdown-item hover-black" href="#">Calle Coffee</a></li>
-                    <li><a class="dropdown-item hover-black" href="#">MugShot</a></li>
-                    <li><a class="dropdown-item hover-black" href="#">Doc Wings</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active hover-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Food Recipe
-                    </a>
-                    <ul class="dropdown-menu">
-                      <p class="MD text-center">Main Dish Recipe</p>
-                      <li><a class="dropdown-item hover-black" href="TheCrunch.html">Breakfast</a></li>
-                      <li><a class="dropdown-item hover-black" href="#">Lunch</a></li>
-                      <li><a class="dropdown-item hover-black" href="#">Brunch</a></li>
-                      <li><a class="dropdown-item hover-black" href="#">Dinner</a></li>
-                    </ul>
-                  </li>
-              <li class="nav-item active">
-                <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guides</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Restaurants
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="TheCrunch.html">The Crunch</a></li>
+                  <li><a class="dropdown-item" href="#">Calle Coffee</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">MugShot</a></li>
+                  <li><a class="dropdown-item" href="#">MugShot</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Recipe
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#MAIN">Main Dish</a></li>
+                  <li><a class="dropdown-item" href="#Snacks">Snacks</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#Drinks">Drinks</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Food Guides</a>
               </li>
             </ul>
           </div>
@@ -71,8 +65,6 @@
         <a href="#The Crunch" class="btn btn-outline-warning btn-lg">About The Crunch</a>
       </div>
     </section>
-    
-    </div>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -100,90 +92,58 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <hr class="footer-line text-warning" id="The Crunch">
+      <hr class="footer-line">
+      <section class=" the-crunch text-warning py-5 text-center bg-emphasis" id="The Crunch">
+        <div class="container">
+          <h1 class="display-4 fw-bold mt-4">About The Crunch</h1>
       <section class="container my-5">
         <div class="row">
-          <div class="col-md-6 mt-4 the-crunch text-warning text-start">
-            <h1>The Crunch</h1>
-            <h4 class="the-crunch text-dark">
-              A franchise business committed to providing a quality serving of flavored boneless fried chicken. We also offer Chicken Shots, Shots Bucket, Half Chicken, and Whole Chicken, available in different delicious flavors such as Classic, Honey Garlic, K-Style, Spicy K-Style, Teriyaki, Cheesy Bacon, and Texas BBQ.
-            </h4>
-          <h4>
-              Treat yourself to this tasty and flavorful boneless chicken at any of our 50+ locations in the country!
-            </h4>
-            <button class="btn btn-outline-warning mt-3" data-bs-toggle="modal" data-bs-target="#locationModal">View Location</button>
-          </div>
-          <div class="col-md-6 mt-4">
-            <img src="FR_Images/TC5.jpg" alt="Delicious food overview" class="img-fluid rounded shadow mb-3">
-          </div>
-        </div>
-      </section>
-      
-      <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-dark" id="locationModalLabel">The Crunch South Branch</h5>
-              <button type="button text-start" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+            <div class="col-md-6 mt-4 the-crunch text-warning text-start">
+                <h1>The Crunch</h1>
+                <h3 class="the-crunch text-dark ">This webpage offers an immersive experience into the world of food—featuring a wide array of delicious dishes, local restaurant highlights, and comprehensive recipe guides. Whether you're a food enthusiast or a budding chef, there's something here for you.</h3>
             </div>
-            <div class="modal-body p-0">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.9672373496637!2d120.97323637545941!3d14.65780078583534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5d97a436e0d%3A0x9dc58ddaf7c229d3!2sThe%20Crunch%20-%20Caloocan!5e0!3m2!1sen!2sph!4v1746073975609!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-md-6">
+                <img src="FR_Images/TC5.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
             </div>
-          </div>
         </div>
-      </div>
         <section class="container my-5">
           <div class="row">
-              <div class="col-md-6 ">
+              <div class="col-md-6">
                   <img src="FR_Images/founder1.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
               </div>
-               <div class="col-md-6 the-crunch text-warning text-start">
+               <div class="col-md-6 the-crunch text-warning">
                   <h1>The Crunch Co-Founder</h1>
                   <h3 class="the-crunch text-dark">
-                    Founded by Joel & Kat, our goal is to share our unique style of tasty boneless fried chicken.
+                      This webpage offers an immersive experience into the world of food—featuring a wide array of delicious dishes, local restaurant highlights, and comprehensive recipe guides. Whether you're a food enthusiast or a budding chef, there's something here for you.
                   </h3>
               </div>
           </div>
-        </section> 
-          <hr class="footer-line text-warning" id="What Food">
+          <hr class="footer-line" id="What Food">
       </section>
-      <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+      <section class=" the-crunch text-warning py-5 text-center bg-emphasis">
         <div class="container">
-          <h1 class="display-4 fw-bold mt-4">What food did you crave today?</h1>
-          <form class="d-flex justify-content-center mb-4" role="search">
-            <input class="form-control me-2 w-50" type="search" placeholder="Search" aria-label="Search">
+          <h1 class="display-4 fw-bold">What food did you crave today?</h1>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-warning" type="submit">Search</button>
           </form>
           <h1 class="display-4 fw-bold">The Crunch Foods, Snacks and Drinks</h1>
-          <p class="the-crunch text-dark lead mb-4"><b>The Crunch</b> has main dish, snacks and drinks to offer for all customers.</p>
-          <div class="row justify-content-center">
-            <div class="col-md-3 mb-4">
-              <img src="FR_Images/TCCHICKEN.jpg" alt="..." class="img-fluid rounded border border-warning">
-              <h4 class="Stress text-dark mt-2 fw-bold">Main</h4>
-              <a href="#MAIN" class="btn btn-outline-warning btn-m">View Main Dish</a>
-            </div>
-            <div class="col-md-3 mb-4">
-              <img src="FR_Images/TCSODA.jpg" alt="..." class="img-fluid rounded border border-warning">
-              <h4 class="Stress text-dark mt-2 fw-bold">Drinks</h4>
-              <a href="#Drinks" class="btn btn-outline-warning btn-m">View Drinks</a>
-            </div>
-            <div class="col-md-3 mb-4">
-              <img src="FR_Images/TCCMAIN.jpg" alt="..." class="img-fluid rounded border border-warning">
-              <h4 class="Stress text-dark mt-2 fw-bold">Snacks</h4>
-              <a href="#Snacks" class="btn btn-outline-warning btn-m">View Snacks</a>
-            </div>
-          </div>
+          <p class="the-crunch text-dark lead mb-4"> <b>The Crunch</b> has main dish, snacks and drinks to offer for all customers.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="FR_Images/TCCHICKEN.jpg" alt="..." class="img-fluid rounded mx-2 border border-warning" style="width: 20%;">
+            <img src="FR_Images/TCSODA.jpg" alt="..."  class="img-fluid rounded mx-2 border border-warning" style="width: 20%;">
+            <img src="FR_Images/TCCMAIN.jpg" alt="..."  class="img-fluid rounded mx-2 border border-warning" style="width: 20%;">
+            <img src="FR_Images/TCCORNDOG1.jpg" alt="..."  class="img-fluid rounded mx-2 border border-warning" style="width: 20%;">
+          </div>          
         </div>
       </section>
-      
-
-      <hr class="footer-line text-warning" id="MAIN">
+      <hr class="footer-line" id="MAIN">
       <section class="the-crunch text-warning py-5 text-center bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mb-4 mt-4">Main</h1>
           <p class="the-crunch text-dark lead mb-4"> This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
           <div class="d-flex flex-wrap justify-content-center gap-4">
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCHONEYGARLIC.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Honey Garlic</h5>
@@ -193,7 +153,7 @@
                 </button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCKSTYLE.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">K-Style</h5>
@@ -203,7 +163,7 @@
                 </button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCTERIYAKI.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Teriyaki</h5>
@@ -213,7 +173,7 @@
                 </button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCCHEESYBACON.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Cheesy Bacon</h5>
@@ -283,13 +243,13 @@
           </div>
         </div>
       </section>
-      <hr class="footer-line text-warning" id="Drinks">
+      <hr class="footer-line" id="Drinks">
       <section class="the-crunch text-warning py-5 text-center bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mb-4 mt-4">Drinks</h1>
           <p class="the-crunch text-dark lead mb-4">This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
           <div class="d-flex flex-wrap justify-content-center gap-4">
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCD1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Honey Garlic</h5>
@@ -297,7 +257,7 @@
                 <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D1">View</button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCD2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">K-Style</h5>
@@ -305,7 +265,7 @@
                 <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D2">View</button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCD3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Teriyaki</h5>
@@ -313,7 +273,7 @@
                 <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D3">View</button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCD4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Cheesy Bacon</h5>
@@ -380,13 +340,13 @@
           </div>
         </div>
       </section>
-      <hr class="footer-line text-warning" id="Snacks">
+      <hr class="footer-line" id="Snacks">
       <section class="the-crunch text-warning py-5 text-center bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mb-4 mt-4">Snacks</h1>
           <p class="the-crunch text-dark lead mb-4">This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
           <div class="d-flex flex-wrap justify-content-center gap-4">
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCC1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Honey Garlic</h5>
@@ -394,7 +354,7 @@
                 <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S1">View</button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCC2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">K-Style</h5>
@@ -402,7 +362,7 @@
                 <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S2">View</button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCCORNDOG1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Teriyaki</h5>
@@ -410,7 +370,7 @@
                 <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S3">View</button>
               </div>
             </div>
-            <div class="card border-warning" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
               <img src="FR_Images/TCCORNDOG4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Cheesy Bacon</h5>
@@ -478,7 +438,6 @@
         </div>
       </section>
       </section>
-    </section>
       <footer class="bg-warning-subtle text-dark py-4">
         <div class="container text-center">
           <img src="FR_Images/NutriCravesLogo.png" alt="FDA" width="150" height="150">
